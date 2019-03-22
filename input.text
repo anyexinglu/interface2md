@@ -33,6 +33,6 @@ interface BaseButtonProps {
   target?: string
   /** 自定义样式 */
   style?: React.CSSProperties
-
+  /** autodisable 是否禁用 */
   autodisable?: boolean
 }
