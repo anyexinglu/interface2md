@@ -3,7 +3,7 @@ interfaceName: BaseButtonProps
 
 | 属性              |                                       说明                                       |              类型              |          默认值 |
 | ----------------- | :------------------------------------------------------------------------------: | :----------------------------: | --------------: |
-| trigger           |                                  触发弹层的事件                                  |   hover, focus, click    |         |   type | 'primary' 'default' 'ghost' 'gray' 'text-primary' 'text' 'text-gray'      @default 'default' |  ButtonType | - |
+|   type | 'primary' 'default' 'ghost' 'gray' 'text-primary' 'text' 'text-gray'      @default 'default' |  ButtonType | - |
   |   icon | 自定义按钮内部图标，我们有自己的图标库 |  string | - |
   |   size | 设置按钮大小 'large' 'default' 'small'       @default 'default' |  ButtonSize | - |
   |   loading | 是否显示loading |  boolean | - |

@@ -2,8 +2,8 @@
 const fs = require("fs");
 const path = require("path");
 
-const input = path.resolve("./input.text");
-const output = path.resolve("./output.md");
+const input = path.resolve("./interface.ts");
+const output = path.resolve("./api.md");
 
 const data = fs.readFileSync(input, "utf8");
 
@@ -35,8 +35,7 @@ newData = `
 interfaceName: ${interfaceName}
 
 | 属性              |                                       说明                                       |              类型              |          默认值 |
-| ----------------- | :------------------------------------------------------------------------------: | :----------------------------: | --------------: |`.concat(
-  result
-);
+| ----------------- | :------------------------------------------------------------------------------: | :----------------------------: | --------------: |
+`.concat(result);
 
 fs.writeFileSync(output, newData);

@@ -2,9 +2,8 @@
 
 查看 Demo：
 
-
 ```
-修改 input.text
+修改 interface.ts
 > node compute.js (前提：安装 node)
-查看 output.text
+查看 api.md
 ```
