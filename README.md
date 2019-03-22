@@ -2,6 +2,9 @@
 
 查看 Demo：
 
-> 修改 input.text
-> 执行 node compute.js (前提：安装 node)
-> 查看 output.text
+
+```
+修改 input.text
+> node compute.js (前提：安装 node)
+查看 output.text
+```
