@@ -21,10 +21,10 @@ result = attrs
   .map(attr => {
     attr = attr.split("*/");
     let desc = attr[0].replace(/[\* | \n]/g, " ").trim();
-    let keyVal = attr[1].match(/([^:]*)[?]:((.*\n.*)*)/);
+    let keyVal = attr[1].match(/(.*)\??:(.*)/);
 
     return keyVal && keyVal.length > 2
-      ? `| ${keyVal[1].replace(/\s/g, "")} | ${desc} | ${keyVal[2].replace(
+      ? `| ${keyVal[1].replace(/[\s|?]/g, "")} | ${desc} | ${keyVal[2].replace(
           /\n/g,
           " "
         )} | - |
