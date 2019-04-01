@@ -25,7 +25,7 @@ result = attrs
 
     return keyVal && keyVal.length > 2
       ? `| ${keyVal[1].replace(/[\s|?]/g, "")} | ${desc} | ${keyVal[2].replace(
-          /\n/g,
+          /[\n|;]/g,
           " "
         )} | - |
   `
